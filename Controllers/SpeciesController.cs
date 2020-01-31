@@ -27,7 +27,7 @@ namespace PetGrooming.Controllers
         // List
         public ActionResult List()
         {
-            //what data do we need?
+            
             List<Species> myspecies = db.Species.SqlQuery("Select * from species").ToList();
 
             return View(myspecies);
@@ -92,7 +92,7 @@ namespace PetGrooming.Controllers
         // [HttpPost] Delete
         public ActionResult Delete(int id)
         {
-            //need information about a particular pet
+            
             string query = "delete from species where SpeciesId= @id";
             SqlParameter parameter = new SqlParameter("@id", id);
 
