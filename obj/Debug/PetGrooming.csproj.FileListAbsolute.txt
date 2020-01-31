@@ -85,4 +85,11 @@ C:\Users\harpr\source\repos\PetGroomingMVC\PetGrooming\obj\Debug\PetGrooming.Mig
 C:\Users\harpr\source\repos\PetGroomingMVC\PetGrooming\obj\Debug\PetGrooming.Migrations.first.resources
 C:\Users\harpr\source\repos\PetGroomingMVC\PetGrooming\obj\Debug\PetGrooming.Migrations.color.resources
 C:\Users\harpr\source\repos\PetGroomingMVC\PetGrooming\obj\Debug\PetGrooming.Migrations.Core_Concepts.resources
-C:\Users\harpr\source\repos\PetGroomingMVC\PetGrooming\obj\Debug\PetGrooming.Migrations.inital.resources
+C:\Users\harpr\source\repos\PetGroomingMVC\PetGrooming\obj\Debug\PetGrooming.Migrations.groomer.resources
+C:\Users\harpr\source\repos\PetGroomingMVC\PetGrooming\obj\Debug\PetGrooming.Migrations.groomer_new.resources
+C:\Users\harpr\source\repos\PetGroomingMVC\PetGrooming\obj\Debug\PetGrooming.Migrations.all_tables.resources
+C:\Users\harpr\source\repos\PetGroomingMVC\PetGrooming\obj\Debug\PetGrooming.Migrations.species.resources
+C:\Users\harpr\source\repos\PetGroomingMVC\PetGrooming\obj\Debug\PetGrooming.Migrations.Booking_1_Many.resources
+C:\Users\harpr\source\repos\PetGroomingMVC\PetGrooming\obj\Debug\PetGrooming.Migrations.Booking_1_Many_Inverse.resources
+C:\Users\harpr\source\repos\PetGroomingMVC\PetGrooming\obj\Debug\PetGrooming.Migrations.pets_owners_MxM.resources
+C:\Users\harpr\source\repos\PetGroomingMVC\PetGrooming\obj\Debug\PetGrooming.Migrations.booking_services_MxM.resources

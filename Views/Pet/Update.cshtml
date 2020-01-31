@@ -1,7 +1,34 @@
-﻿
+﻿@model PetGrooming.Models.ViewModels.UpdatePet
+
+
 @{
     ViewBag.Title = "Update";
 }
 
 <h2>Update</h2>
-
+<a href="/Pet/List" class="btn btn-primary btn-sm">Back to List</a>
+<a href="/Pet/Delete/@Model.pet.PetID" class="btn btn-danger btn-sm">Delete Pet</a>
+<form action="/Pet/Update/@Model.pet.PetID" method="POST">
+    <span>Pet Name </span><input type="text" value="@Model.pet.PetName" id="PetName" name="PetName"/><br />
+    <span>Pet Color </span><input type="text" value="@Model.pet.Color" id="PetColor" name="PetColor"/><br />
+    <span>Pet Weight </span><input type="text" value="@Model.pet.Weight" id="PetWeight" name="PetWeight"/><br />
+    <span>Pet Species </span>
+    <select name="SpeciesID" id="SpeciesId">
+        @{ 
+            foreach(var species in Model.species)
+            {
+                string selected = "";
+                if (species.SpeciesID == Model.pet.SpeciesID)
+                {
+                    selected = "selected";
+                }
+                <option value="@species.SpeciesID" @selected>@species.Name</option>
+            }
+        }
+    </select>
+    <div>
+        <span>Pet Notes </span>
+        <textarea id="PetNotes" name="PetNotes">@Model.pet.Notes</textarea>
+    </div>
+    <input type="submit" value="update pet" />
+</form>

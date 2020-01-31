@@ -18,9 +18,15 @@ namespace PetGrooming.Models
                 - Cost
                 - Duration
          */
-        [Key]
-        public int ServiceID { get; set; }
-        public double ServiceCost { get; set; }
+         public int GroomServiceID { get; set; }
+        public string ServiceName { get; set; }
+        //Cost is established as Cents rather than dollars (i.e. 2000c = $20.00)
+        //currency is CANADIAN (cad)
+        public int ServiceCost { get; set; }
+        //Service duration established as minutes (i.e. 90min = 1hour30min)
         public int ServiceDuration { get; set; }
+
+        //Representing the Many in (Many services to many Bookings)
+        public ICollection<GroomBooking> GroomBookings { get; set; }
     }
 }

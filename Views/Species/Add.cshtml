@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Add";
+}
+
+<h2>Add a new Species</h2>
+<a href="/Species/List" class="btn btn-primary btn-sm">Back to List</a>
+<form method="post" action="/Species/Add">
+    <div>
+        <span>Name:</span>
+        <input id="SpeciesName" type="text" name="speciesName" />
+    </div>
+    <input type="submit" value="Add Species" />
+</form>
+
+

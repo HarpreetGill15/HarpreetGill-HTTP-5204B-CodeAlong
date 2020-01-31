@@ -1,0 +1,13 @@
+﻿@model PetGrooming.Models.Species
+@{
+    ViewBag.Title = "Update";
+}
+
+<h2>Update</h2>
+<a href="/Species/List" class="btn btn-primary btn-sm">Back to List</a>
+<a href="/Species/Delete/@Model.SpeciesID" class="btn btn-danger btn-sm">Delete</a>
+<form method="post" action="/Species/Update/@Model.SpeciesID">
+    Species Name <input id="Species Name" name="SpeciesName" value="@Model.Name" />
+    <input type="submit" id="submit" value="Submit" />
+</form>
+
